@@ -1,0 +1,31 @@
+.info
+	padding: 64px 0
+	background: url('../img/info-bg.jpg') no-repeat center
+	background-size: cover
+	&-wrap
+		+flex
+		align-items: center
+		.info-left
+			flex-grow: 1
+		.info-right
+			.about
+				padding: 21px 53px 19px 29px
+				font-family: 'Montserrat', sans-serif
+				font-size: 15px
+				color: #fff
+				background: #6C525B
+				border: none
+				cursor: pointer
+				&:hover
+					+trs
+					background: #846A73
+	.section-title
+		font-family: 'Merriweather', serif;
+		font-size: 24px
+		color: #fff
+	&-descr
+		max-width: 685px
+		font-family: 'Montserrat', sans-serif
+		font-size: 18px
+		color: #C8CDD8
+		line-height: 146%

@@ -1,0 +1,33 @@
+.interior
+	padding: 62px 0 70px 0
+	background: url('../img/interior/bg.jpg') no-repeat center
+	background-size: cover
+	.section-title
+		color: #fff
+	&-slider
+		+flex
+		.slick-list
+			padding: 0 0 0 23px
+			.slick-slide
+				outline: none
+		&__item
+			max-width: 360px
+			margin: 0 15px
+			img
+				max-width: 100%
+				height: auto
+		.arrow
+			position: absolute
+			right: 0
+			top: -77px
+			padding: 8px
+			font-size: 30px
+			color: #6E7483
+			border: 1px solid #4D515D
+			cursor: pointer
+			&_left
+				right: 40px
+			&:hover
+				+trs
+				color: #D5D9E3
+				border-color: #777B8A
