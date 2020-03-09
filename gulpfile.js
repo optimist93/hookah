@@ -9,6 +9,7 @@ const jsFiles = [
 	'./src/js/slick.min.js',
 	'./src/js/some.js',
 	'./src/js/tabs.js',
+	'./src/js/mobileMenu.js'
 ];
 
 gulp.task('serve', function() {
@@ -38,7 +39,7 @@ gulp.task('scripts', function () {
 							// 	toplevel: true
 							// }))
 							.pipe(gulp.dest('./build/js'))
-							.pipe(browserSync.stream());;
+							.pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() {

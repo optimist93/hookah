@@ -1,0 +1,56 @@
+.footer
+	display: flex
+	height: 614px
+	&-map
+		flex-basis: 60%
+	&-info
+		flex-basis: 40%
+		padding: 97px 0 0 72px
+		.section-title
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				left: 305px
+				top: -23px
+				display: block
+				width: 99px
+				height: 103px
+				background: url('../img/contacts/lighter.svg')no-repeat center
+		.main-footer__phone
+			display: block
+			margin-bottom: 24px
+			font-family: 'Montserrat', sans-serif
+			font-size: 15px
+			font-weight: 700
+			color: #2B2D33
+		.main-footer__address,
+		.main-footer__time
+			margin-bottom: 15px
+			line-height: 156%
+	&-social
+		display: flex
+		margin-top: 50px
+		&__item
+			flex: none
+			border: none
+			display: block
+			padding: 20px 40px
+			margin-right: 15px
+			color: #fff
+			background-color: #30333B
+			font-family: 'Montserrat', sans-serif
+			font-size: 15px
+			font-weight: 500
+			cursor: pointer
+			+trs
+			&:last-child
+				margin-right: 0
+			i
+				+trs
+				margin-right: 12px
+				color: #6A6F7D
+			&:hover
+				background-color: #444853
+				i
+					color: #6A6F7D

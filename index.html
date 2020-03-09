@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
@@ -11,7 +12,7 @@
 </head>
 <body>
 	<section class="main">
-		<footer class="container">
+		<div class="container">
 			<header class="main-header">
 				<a href="#" class="logo">
 					<img src="build/img/main/logo.png" alt="logo">
@@ -31,6 +32,25 @@
 						<li><a href="# ">Контакты</a></li>
 					</ul>
 				</nav>
+				<a href="#" class="burger-btn">
+					<span></span>
+				</a>
+				<div class="m-menu">
+					<div class="m-menu__close"><i class="zmdi zmdi-close"></i></div>
+					<ul class="m-menu__list">
+						<li><a href="#">О клубе</a></li>
+						<li><a href="#">Интерьер</a></li>
+						<li><a href="#">Меню</a></li>
+						<li><a href="#">Преимущества</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="m-menu__social">
+						<li><a href="#"><i class="zmdi zmdi-vk"></i></a></li>
+						<li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+						<li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+					</ul>
+				</div>
 			</header>
 
 			<h1 class="main-head">
@@ -69,42 +89,43 @@
 				<div class="tradition-info__img">
 					<img src="build/img/tradition/hookah.png" alt="hookah">
 				</div>
-				<ul class="tradition-list">
-					<li>
-						<h3 class="tradition-list__title">
-							Услуги
-						</h3>
-						<p>
-							Серьезная сигарная карта и достойный выбор кальянов – standart, premium или de luxe.
-							Всегда в наличии элитный алкоголь, который составляет отличную партию сигарам. Всем,
-							кто за рулем бармен предложит авторский чай.
-						</p>
-					</li>
-					<li class="tradition-info__img-mob">
-						<div class="tradition-info__img">
-							<img src="build/img/tradition/hookah.png" alt="hookah">
-						</div>
-					</li>
-					<li>
-						<h3 class="tradition-list__title">
-							Развлечения
-						</h3>
-						<p>
-							В клубе «Дым кудрявый» установлены плазменные панели, на которых можно посмотреть спортивный матч. Также в гостевом зале вы найдете шахматы и шашки, в том числе интересные авторские коллекции.
-						</p>
-					</li>
-					<li>
-						<h3 class="tradition-list__title">
-							Для кого
-						</h3>
-						<p>
-							Курительный клуб №1 «Дым кудрявый» создан для деловых и неформальных встреч.
-							В отличии от традиционных английских курительных клубов, заведение
-							в Екатеринбурге ждет и джентльменов, и леди.
-						</p>
-					</li>
-				</ul>
 			</div>
+			
+			<ul class="tradition-list">
+				<li>
+					<h3 class="tradition-list__title">
+						Услуги
+					</h3>
+					<p>
+						Серьезная сигарная карта и достойный выбор кальянов – standart, premium или de luxe.
+						Всегда в наличии элитный алкоголь, который составляет отличную партию сигарам. Всем,
+						кто за рулем бармен предложит авторский чай.
+					</p>
+				</li>
+				<li class="tradition-info__img-mob">
+					<div>
+						<img src="build/img/tradition/hookah.png" alt="hookah">
+					</div>
+				</li>
+				<li>
+					<h3 class="tradition-list__title">
+						Развлечения
+					</h3>
+					<p>
+						В клубе «Дым кудрявый» установлены плазменные панели, на которых можно посмотреть спортивный матч. Также в гостевом зале вы найдете шахматы и шашки, в том числе интересные авторские коллекции.
+					</p>
+				</li>
+				<li>
+					<h3 class="tradition-list__title">
+						Для кого
+					</h3>
+					<p>
+						Курительный клуб №1 «Дым кудрявый» создан для деловых и неформальных встреч.
+						В отличии от традиционных английских курительных клубов, заведение
+						в Екатеринбурге ждет и джентльменов, и леди.
+					</p>
+				</li>
+			</ul>
 			
 		</div><!-- /.container -->
 		
@@ -416,9 +437,43 @@
 		</div><!-- /.container -->
 		
 	</section>
-	<div id="map">
-		
-	</div>
+	
+	<footer class="footer">
+		<div class="footer-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1835.3355341413633!2d60.61288321611771!3d56.8357531216951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1583771581411!5m2!1sru!2sru" width="100%" height="614" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+
+		<div class="footer-info">
+			<h2 class="section-title">Контакты</h2>
+			<div class="footer-info__contacts">
+				<a href="tel:+73432989888" class="main-footer__phone"><i class="zmdi zmdi-phone"></i>+7 (343) 298-98-88
+				</a>
+				
+				<div class="main-footer__address">
+					<i class="zmdi zmdi-pin"></i>
+					<div>Екатеринбург, ул. Малышева 51,<br>
+						БЦ Высоцкий, 50 этаж</div>
+				</div>
+	
+				<div class="main-footer__time">
+					<i class="zmdi zmdi-time"></i>
+					<div>вс-чт с 16:00 до 00:00</div>
+					<div>пт-сб с 16:00 до 04:00</div>
+				</div>
+			</div>
+
+			<div class="footer-social">
+				<button class="footer-social__item">
+					<i class="zmdi zmdi-facebook"></i>
+					Facebook
+				</button>
+				<button class="footer-social__item">
+					<i class="zmdi zmdi-instagram"></i>
+					Instagram
+				</button>
+			</div>
+		</div> <!-- / footer-info -->
+	</footer>
 </body>
 
 <script src="build/js/jquery-3.3.1.min.js"></script>
